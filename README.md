@@ -31,3 +31,7 @@ Currently, two official plugins are available:
 ### Running the Project
 
 Project uses NPM as package manager. Run `npm install` to install project dependencies and then `npm run dev` to start development.
+
+### Deploy
+
+Project is deployed to GitHub Pages: https://ntonbala.github.io/blog-em-ipsum. Deployment is done automatically from `main` branch.
