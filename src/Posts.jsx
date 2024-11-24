@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import { fetchPosts, deletePost, updatePost } from "./api";
-import { PostDetail } from "./PostDetail";
+import { fetchPosts, deletePost, updatePost } from './api';
+import { PostDetail } from './PostDetail';
 const maxPostPage = 10;
 
 export function Posts() {
@@ -9,17 +9,14 @@ export function Posts() {
   const [selectedPost, setSelectedPost] = useState(null);
 
   // replace with useQuery
+  //
   const data = [];
 
   return (
     <>
       <ul>
         {data.map((post) => (
-          <li
-            key={post.id}
-            className="post-title"
-            onClick={() => setSelectedPost(post)}
-          >
+          <li key={post.id} className="post-title" onClick={() => setSelectedPost(post)}>
             {post.title}
           </li>
         ))}
