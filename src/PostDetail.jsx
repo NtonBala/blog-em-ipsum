@@ -31,3 +31,4 @@ export function PostDetail({ post }) {
     </>
   );
 }
+//
